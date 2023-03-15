@@ -12,15 +12,16 @@
   box-sizing: inherit;
 }
 
-.html {
+/* html {
   font-size: 62.5%;
   line-height: 1.6rem;
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
-}
+} */
 
+/* Responsive */
 .grid {
-  width: 1200px;
+  width: 1230px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -32,6 +33,21 @@
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+/* Test */
+.grid__column-2 {
+  /* padding-left: 12px;
+  padding-right: 12px; */
+  width: 16.6667%;
+}
+
+.grid__column-10 {
+  /* padding-left: 12px;
+  padding-right: 12px; */
+  width: 83.3334%;
 }
 
 /* Animation */
@@ -65,6 +81,7 @@
   font-size: medium;
   text-decoration: none;
   background-color: white;
+  padding: 7px 14px;
 }
 
 .btn:hover {
@@ -74,8 +91,9 @@
 .btn.btn-primary {
   color: #fff;
   background-color: rgb(246, 60, 9);
-  border: 2px solid rgba(0, 0, 0, 0.228);
+  border: 2px solid rgba(0, 0, 0, 0);
   margin-left: 20px;
+  padding: 5px 15px;
 }
 
 .btn.btn-primary:hover {
@@ -90,4 +108,55 @@
 
 .btn--width-icon {
   padding: 5px 10px;
+}
+
+/* Selection */
+.select-input {
+  background-color: white;
+  min-width: 180px;
+  height: 35px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.select-input:hover {
+  cursor: pointer;
+}
+
+.select-input:hover .select-input__list {
+  display: block;
+}
+
+.select-input__label {
+  margin-left: 11px;
+}
+
+.select-input__list {
+  list-style: none;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 58%;
+  width: 100%;
+  padding: 5px 0;
+  margin: 16px 0 0 0;
+  display: none;
+}
+
+.select-input-item {
+  margin-left: 15px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.select-input-item a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+}
+
+.select-input-item a:hover {
+  color: orangered;
 }
