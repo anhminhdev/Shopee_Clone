@@ -122,7 +122,9 @@
               <li class="header__navbar-item header__navbar-item--strong header__navbar-item--separate">
                 <p class="signin">Đăng ký</p>
               </li>
-              <li class="header__navbar-item header__navbar-item--strong">Đăng nhập</li>
+              <li class="header__navbar-item header__navbar-item--strong">
+                <p class="signup">Đăng nhập</p>
+              </li>
 
               <!-- <li class="header__navbar-item header__navbar-user">
                 <img src="../assets/imgs/hinh-anh-gai-xinh-de-thuong.jpg" alt="avatar" class="header__navbar-user-img">
@@ -996,8 +998,8 @@
 
   </div>
 
-  <!-- Modal layout -->
-  <div class="modal">
+  <!-- Modal layout sign up -->
+  <div class="modal-signup">
     <div class="modal__overlay"></div>
 
     <div class="modal__body">
@@ -1049,9 +1051,17 @@
           </a>
         </div>
       </div>
+    </div>
 
+  </div>
+
+  <!-- Modal layout log in-->
+  <div class="modal-login">
+    <div class="modal__overlay"></div>
+
+    <div class="modal__body">
       <!-- Login form -->
-      <!-- <div class="auth-form">
+      <div class="auth-form">
         <div class="auth-form__container">
 
           <div class="auth-form__header">
@@ -1085,18 +1095,17 @@
         </div>
 
         <div class="auth-form__social">
-          <a href="" class="btn--width-icon btn--width-icon--fb">
+          <a href="" class="btn--width-icon auth-form__social--fb">
             <i class="fab fa-facebook-square"></i>
-            Đăng nhập với Facebook
+            <span class="auth-form__social-title">Đăng nhập với Facebook</span>
           </a>
-          <a href="" class="btn--width-icon btn--width-icon--gg">
+          <a href="" class="btn--width-icon auth-form__social--gg">
             <i class="fa-brands fa-google"></i>
-            Đăng nhập với Google
+            <span class="auth-form__social-title">Đăng nhập với Google</span>
           </a>
         </div>
-      </div> -->
+      </div>
     </div>
-
   </div>
 
 </body>
